@@ -1,0 +1,500 @@
+   56  git branch
+   57  clear
+   58  cd ..
+   59  ls
+   60  mkdir UMUZI-BOOTCAMP
+   61  cd UMUZI-BOOTCAMP
+   62  mkdir git-basic-exercises
+   63  cd git-basic-exercises
+   64  ls -la
+   65  git init
+   66  ls -la
+   67  git status
+   68  clea
+   69  clear
+   70  git status
+   71  ls -la
+   72  touch README.md
+   73  ls -a
+   74  ls -la
+   75  clear
+   76  git status
+   77  git log
+   78  git add .
+   79  git status
+   80  git commit -m "initial commit"
+   81  git status
+   82  git log
+   83  nano README.md
+   84  cat README.md
+   85  git status
+   86  git add .
+   87  git commit -m "add new line"
+   88  git log
+   89  nano README.md
+   90  git add .
+   91  git commit -m "second commit"
+   92  git log
+   93  git checkout c5594b009b221f58000810fd9aaa7cce4760e368
+   94  git checkout main
+   95  git branch
+   96  git -b milkshake-flavours
+   97  git checkout -b milkshake-flavours
+   98  git branch
+   99  git checkout
+  100  git checkout main
+  101  git branch
+  102  git checkout milkshake-flavours
+  103  nano README.MD
+  104  git status
+  105  git commit -m "added initial flavours"
+  106  git add .
+  107  git commit -m "added initial flavours"
+  108  git checkout main
+  109  git log
+  110  git checkout -b history
+  111  git log
+  112  history > history.txt
+  113  ls
+  114  cat history.txt
+  115  clear
+  116  git add .
+  117  git commit -m "added history"
+  118  git branch
+  119  git checkout milkshake-flavours
+  120  git log
+  121  nano README.md
+  122  git add .
+  123  git commit -m "random readme changes"
+  124  git checkout history
+  125  cat README.md
+  126  rm README.md
+  127  echo "booya" > README.md
+  128  git add .
+  129  git commit -m "rewrote readme"
+  130  git checkout main
+  131  ls
+  132  git log
+  133  git checkout milkshake-flavours
+  134  ls
+  135  git checkout main
+  136  git merge milkshake-flavours
+  137  ls
+  138  git log
+  139  git merge history
+  140  name README.md
+  141  ls
+  142  nano README.md
+  143  git commit "merge history to main"
+  144  git commit -m "merge history to main"
+  145  git add
+  146  git add .
+  147  git commit -m "merge history to main"
+  148  cd ..
+  149  clear
+  150  git clone https://github.com/Umuzi-org/a-repo-to-clone.git
+  151  cd a-repo-to-clone
+  152  git branch
+  153  git log
+  154  git branch -a
+  155  git checkout a-branch-with-a-few-commits
+  156  git remote -v
+  157  git log
+  158  git ..
+  159  cd ../
+  160  ls
+  161  cd git-basic-exercises
+  162  git log
+  163  touch ignore-me.db
+  164  nano .gitignore
+  165  git status
+  166  mkdir large-directory-that-should-be-local-only
+  167  clear
+  168  cd large-directory-that-should-be-local-only
+  169  cd ..
+  170  git status
+  171  ls
+  172  git status
+  173  nano .gitignore
+  174  git status
+  175  git add .gitignore
+  176  git commit -m "added .gitignore"
+  177  git push
+  178  git remote add origin https://github.com/Umuzi-org/a-repo-to-clone.git
+  179  git push origin
+  180  git branch -M main
+  181  git remote add origin https://github.com/Jakaza/git-basic-exercises.git
+  182  git remote remove origin
+  183  git remote add origin https://github.com/Jakaza/git-basic-exercises.git
+  184  git push -u origin main
+  185  nano README.md
+  186  git status
+  187  git add .
+  188  git commit -m "resolve conflit"
+  189  git push
+  190  clear
+  191  git clone https://github.com/Umuzi-org/Goodness-Chauke-219-level-1-programming-katas-javascript.git
+  192  ls
+  193  cd Goodness-Chauke-219-level-1-programming-katas-javascript/
+  194  git status
+  195  git checkout main
+  196  git pull
+  197  git checkout -b task/1
+  198  git status
+  199  git status
+  200  git add .
+  201  git status
+  202  git commit -m "task1 file and implementation of function that print sum of all the multiples of 3 or 5 below 1000."
+  203  git status
+  204  git checkout main
+  205  git merge task/1
+  206  ls
+  207  git push
+  208  git status
+  209  git branch -d task/1
+  210  git branch
+  211  git checkout -b task/2
+  212  ls
+  213  git add task1.js
+  214  git status
+  215  git commit -m "change function name from task1 to multiples"
+  216  git push
+  217  git status
+  218  git checkout main
+  219  git merge task/2
+  220  git status
+  221  git push
+  222  git merge task/2
+  223  git checkout task/2
+  224  git status
+  225  git add .
+  226  git status
+  227  git commit -m "task2 file and function that check if either one number is 3 and if sum contains 3"
+  228  git checkout main
+  229  git push
+  230  git merge task/2
+  231  git push
+  232  git branch -d task/2
+  233  git status
+  234  git add .
+  235  git commit -m "remove testing func"
+  236  git push
+  237  git checkout task/3
+  238  git check
+  239  git add .
+  240  git commit -m "the function determines whether at least one of the numbers is 65 or if their sum is 65. It returns true if either condition is met and false otherwise."
+  241  git checkout main
+  242  git merge task/3
+  243  git push
+  244  git branch -d task/3
+  245  git checkout -b task/4
+  246  git add .
+  247  git commit -m "prints out a square using the hash character."
+  248  git checkout main
+  249  git merge task/4
+  250  git push
+  251  git branch task/4
+  252  git branch -d task/4
+  253  git checkout task/5
+  254  git checkout -b task/5
+  255  git add .
+  256  git commit -m "a function triangle that takes in an Integer and prints a triangle"
+  257  git checkout main
+  258  git merge task/5
+  259  git branch task/4
+  260  git push
+  261  git branch -d task/5
+  262  git checkout task/6
+  263  git checkout -b task/6
+  264  git status
+  265  git add .
+  266  git commit -m "function take list of words and print the longest word"
+  267  git checkout main
+  268  git merge task/6
+  269  git push
+  270  git branch -d task/6
+  271  git checkout -b task/6
+  272  git add .
+  273  git commit -m "function combine to arrays"
+  274  git checkout main
+  275  git merge task/7
+  276  git merge task/6
+  277  git status
+  278  git push
+  279  git branch -d task/6
+  280  ls
+  281  git add .
+  282  git commit -m "fix bug"
+  283  git push
+  284  ls
+  285  git add .
+  286  git status
+  287  git commit -m "remove comments"
+  288  git push
+  289  git add .
+  290  git commit -m "whitespace around output ##"
+  291  git push
+  292  git add .
+  293  git commit -m "clean code"
+  294  git push
+  295  git add .
+  296  git commit -m "combine number alternately from two arrays"
+  297  git push
+  298  ls /
+  299  ls
+  300  cd ..
+  301  cd Goodness-Chauke-219-level-1-programming-katas-javascript
+  302  cd ..
+  303  ls Goodness-Chauke-219-level-1-programming-katas-javascript
+  304  cd ..
+  305  ls
+  306  git clone https://github.com/Umuzi-org/Goodness-Chauke-223-person-javascript.git
+  307  code 
+  308  ls
+  309  cd Goodness-Chauke-223-person-javascript
+  310  git add .
+  311  git commit -m "person class."
+  312  git push
+  313  ls
+  314  rm task1.js
+  315  ls
+  316  git push
+  317  git checkout -b task/1
+  318  git tee task1.js
+  319  tee task1.js
+  320  git status
+  321  git add .
+  322  git commit -m "count all numbers divisible by 3 or 5"
+  323  git push
+  324  git pull --h
+  325  git checkout main
+  326  git push
+  327  git pull
+  328  git push
+  329  git checkout task/1
+  330  git push
+  331  git push --set-upstream origin task/1
+  332  git push
+  333  git checkout task/2
+  334  git checkout -b task/2
+  335  ls
+  336  rm task2.js
+  337  ls
+  338  tee task2.js
+  339  git add .
+  340  git commit -m "check if one of the two numbers is 3 or not"
+  341  git push
+  342  git push --set-upstream origin task/2
+  343  git push
+  344  git branch
+  345  git checkout main
+  346  git branch -d task/
+  347  git branch -d task/2
+  348  git branch -d task/3
+  349  git branch -d task/4
+  350  git branch
+  351  git branch -d task/1
+  352  git branch
+  353  git pull
+  354  ls
+  355  git branch
+  356  git chechout -b task/1
+  357  git checkout -b task/1
+  358  ls
+  359  touch task1.js
+  360  git status
+  361  git add .
+  362  git push --set-upstream origin task/1
+  363  git commit -m "count all numbers divisible by 3 or 5"
+  364  git push
+  365  git checkout -b task/2
+  366  touch task2.js
+  367  ls
+  368  git add .
+  369  git commit -m "check if one of the two numbers is 3 or not"
+  370  git push --set-upstream origin task/2
+  371  push
+  372  git push
+  373  git checkout -b task/3
+  374  touch task3.js
+  375  git add .
+  376  git commit -m "check if number is 65"
+  377  git push --set-upstream origin task/3
+  378  git checkout -b task/4
+  379  touch task4.js
+  380  git add .
+  381  git commit -m "draw square using #"
+  382  git commit -m "draw square using #"
+  383  git push --set-upstream origin task/4
+  384  git checkout -b task/5
+  385  touch task5.js
+  386  git add .
+  387  git commit -m "draw triange using #"
+  388  git push --set-upstream origin task/5
+  389  git checkout -b task/6
+  390  touch task6.js
+  391  git add .
+  392  git commit -m "search the longest word from give string of array"
+  393  git push --set-upstream origin task/6
+  394  git checkout -b task/7
+  395  touch task7.js
+  396  git add .
+  397  git commit -m "combines two lists by taking alternate elements and returns the result"
+  398  git push --set-upstream origin task/
+  399  git push --set-upstream origin task/7
+  400  ls
+  401  git pull
+  402  ls
+  403  git checkout -b feature
+  404  mkdir src
+  405  touch src/person.js
+  406  ls
+  407  git add .
+  408  git commit -m "person class"
+  409  git push --set-upstream origin feature
+  410  git add .
+  411  git commit -m "format Interests Sentence dynamic"
+  412  git push
+  413  ls
+  414  git checkout feature
+  415  git add .
+  416  git commit -m "return and change function to myInterests"
+  417  git push
+  418  git add .
+  419  git commit -m "fix myInterests call"
+  420  git push
+  421  git add .
+  422  git commit -m "constructor to accept object as parameter and fix insterest format"
+  423  git push
+  424  LS
+  425  branch
+  426  git brach
+  427  git branch
+  428  git checkout milkshake-flovours
+  429  git checkout milkshake-flavours
+  430  ls
+  431  git checkout main
+  432  git merge milkshake-flavours
+  433  ls
+  434  git checkout milkshake-flavours
+  435  ls
+  436  git checkout milkshake-flavours
+  437  git push
+  438  git push --set-upstream origin milkshake-flavours
+  439  git branch
+  440  git checkout history
+  441  git push
+  442  git push --set-upstream origin history
+  443  git branch
+  444  ls
+  445  cat README.md
+  446  vim README.md
+  447  nano README.md
+  448  ls
+  449  rm request.http
+  450  rm -rf request.http
+  451  rm -rf _helpers users
+  452  ls
+  453  rm rquest.http
+  454  ls
+  455  git status
+  456  git add .
+  457  git status
+  458  ls -a
+  459  rm -rf .git
+  460  git status
+  461  git init
+  462  git status
+  463  git add .
+  464  git commit -m "init takealot api backend application"
+  465  git status
+  466  git ls
+  467  ls
+  468  rm -rf package-lock.json
+  469  ls
+  470  git add .
+  471  git commit -m "clean up - remove package-lock.json"
+  472  git staus
+  473  git status
+  474  cls
+  475  clear
+  476  ls
+  477  mkdir model controller config route middleware
+  478  tee config/dbConnection.js
+  479  ls
+  480  ls
+  481  touch model/userModel.js
+  482  clear
+  483  ls
+  484  touch route/authRoute.js
+  485  touch controller/userController.js
+  486  ls
+  487  cd ..
+  488  cd ..
+  489  cd ..
+  490  cd ..
+  491  ls
+  492  branch
+  493  git branch
+  494  git checkout milkshake-flavours
+  495  ls
+  496  git status
+  497  git add .
+  498  git commit -m "add age and gender on the return type of hello"
+  499  git push\
+  500  git push
+  501  ls -a
+  502  rm -rf .git
+  503  ls
+  504  branch
+  505  git branch
+  506  cls
+  507  clear
+  508  sl
+  509  ls
+  510  git init
+  511  [200~ls -a~
+  512  ls -a
+  513  git status
+  514  touch README.md
+  515  clear
+  516  ls -a
+  517  git status
+  518  git log
+  519  git add .
+  520  git status
+  521  git rm --cached .
+  522  git rm --cached README.md
+  523  git status
+  524  git add .
+  525  git commit -m "initial commit"
+  526  git log
+  527  nano README.md
+  528  cat README.md
+  529  git status
+  530  git add .
+  531  git commit -m "second commit"
+  532  nano README.md
+  533  git add .
+  534  git commit -m "third commit"
+  535  git log
+  536  git checkout 74fdf496486f359f82c7d4ee577f0b7ac2734c5e
+  537  cat README.md
+  538  git checkout main
+  539  cat README.md
+  540  git branch
+  541  git checkout milkshake-flavours
+  542  git checkout -b milkshake-flavours
+  543  git branch
+  544  nano milkshakes.md
+  545  git status
+  546  git add .
+  547  git commit -m ""added initial flavours"
+  548  git commit -m "added initial flavours"
+  549  git log
+  550  git checkout history
+  551  git checkout main
+  552  git checkout -b history
+  553  git log
+  554  git branch
+  555  history > history.txt
